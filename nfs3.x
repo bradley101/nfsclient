@@ -1,10 +1,10 @@
-/*const long PROGRAM = 100003;
-const long VERSION = 3;*/
+const PROGRAM = 100003;
+const VERSION = 3;
 
-#define NFS3_FHSIZE 64
-#define NFS3_COOKIEVERFSIZE 8
-#define NFS3_CREATEVERFSIZE 8
-#define NFS3_WRITEVERFSIZE 8
+const NFS3_FHSIZE = 64;
+const NFS3_COOKIEVERFSIZE = 8;
+const NFS3_CREATEVERFSIZE = 8;
+const NFS3_WRITEVERFSIZE = 8;
 
 typedef unsigned hyper uint64;
 typedef hyper int64;
@@ -243,7 +243,7 @@ program NFS_PROGRAM {
 
         GETATTR3res
             NFSPROC3_GETATTR(GETATTR3args)         = 1;
-
+/*
         SETATTR3res
             NFSPROC3_SETATTR(SETATTR3args)         = 2;
 
@@ -303,7 +303,7 @@ program NFS_PROGRAM {
 
         COMMIT3res
             NFSPROC3_COMMIT(COMMIT3args)           = 21;
-
+*/
     } = 3;
 } = 100003;
 
